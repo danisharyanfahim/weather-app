@@ -70,7 +70,7 @@ export default function WeeatherApp() {
         found && data ? (
           <WeatherCard {...data} />
         ) : (
-          <h2>City can't be found</h2>
+          <h2 className="no-results-container">No Results</h2>
         )
       ) : (
         <h2 className="loading-icon-container">
