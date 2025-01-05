@@ -270,14 +270,21 @@ button {
 .loading-icon-container,
 .no-results-container {
   color: white;
-  font-size: 5rem;
   height: 60vh;
   display: flex;
   align-items: center;
 }
 
-.loading-icon-container #loading-icon {
-  animation: spinClockwise 1s linear infinite;
+.loading-icon-container {
+  font-size: 5rem;
+
+  #loading-icon {
+    animation: spinClockwise 1s linear infinite;
+  }
+}
+
+.no-results-container {
+  font-size: 3rem;
 }
 
 @keyframes fadeIn {
