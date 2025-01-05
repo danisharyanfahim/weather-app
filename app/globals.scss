@@ -266,6 +266,18 @@ button {
   }
 }
 
+.loading-icon-container {
+  color: white;
+  font-size: 5rem;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+
+  #loading-icon {
+    animation: spinClockwise 1s linear infinite;
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0%;
@@ -274,3 +286,17 @@ button {
     opacity: 100%;
   }
 }
+
+@keyframes spinClockwise {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  50% {
+    transform: rotateZ(180deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+} /*spin clockwise*/

@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import WeatherCard, { WeatherCardProps } from "./components/weather-card";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 const api_key = "4996a3a183b4b8a22ffe840cde5f5d2d";
 const defaultCity: string = "Toronto";
@@ -10,6 +11,7 @@ export default function WeeatherApp() {
   const [data, setData] = useState<null | WeatherCardProps>(null);
   const [location, setLocation] = useState<string>("");
   const [found, setFound] = useState<boolean>(true);
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     search(defaultCity);
@@ -17,6 +19,7 @@ export default function WeeatherApp() {
 
   const search = async (cityName: string) => {
     if (cityName !== "") {
+      setLoading(true);
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=Metric&appid=${api_key}`;
       const response = await fetch(url);
       const weatherData: WeatherCardProps = await response.json();
@@ -31,6 +34,7 @@ export default function WeeatherApp() {
         }
       }
       setLocation("");
+      setLoading(false);
     }
   };
 
@@ -62,7 +66,17 @@ export default function WeeatherApp() {
           </p>
         </button>
       </div>
-      {found && data ? <WeatherCard {...data} /> : <h2>City can't be found</h2>}
+      {!loading ? (
+        found && data ? (
+          <WeatherCard {...data} />
+        ) : (
+          <h2>City can't be found</h2>
+        )
+      ) : (
+        <h2 className="loading-icon-container">
+          <AiOutlineLoading3Quarters id="loading-icon" />
+        </h2>
+      )}
     </div>
   );
 }
