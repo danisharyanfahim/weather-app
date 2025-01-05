@@ -4,9 +4,9 @@ import { FaMagnifyingGlass } from "react-icons/fa6";
 import WeatherCard, { WeatherCardProps } from "./components/weather-card";
 
 const api_key = '4996a3a183b4b8a22ffe840cde5f5d2d'
+const defaultCity: string = 'Toronto' 
 
-
-export default function WeeatherApp({ defaultCity = 'Toronto' }: { defaultCity: string }) {
+export default function WeeatherApp() {
   const [data, setData] = useState<null | WeatherCardProps>(null)
   const [location, setLocation] = useState<string>('')
   const [found, setFound] = useState<boolean>(true)
