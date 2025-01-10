@@ -50,6 +50,10 @@ export default function WeeatherApp() {
 
   return (
     <div className="weather-page">
+      <h1 className="title-container">
+        Weather
+        <span className="colored">App</span>
+      </h1>
       <div className="search-bar-container">
         <input
           type="search"

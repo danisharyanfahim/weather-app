@@ -85,6 +85,17 @@ button {
   }
 }
 
+.title-container {
+  color: white;
+  margin: 2rem 0rem;
+  .colored {
+    background: linear-gradient(to top left, blue, rgb(0, 89, 255));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
 .search-bar-container {
   width: 100%;
   display: flex;
