@@ -18,12 +18,12 @@ Quick weather app project I cooked up in around a day, that displays the current
   - The wind direction, which is displayed through a direction arrow that changes direction based on the wind speed angle
 
 ## Features I can implement later
-  -Metric to Imperial Toggle Switch: Switches units from metric to imperial (C to F, and kmph to mph)
-  -Multi-day Weather Display: Display weather data for the entire weak
-  -Highest and Lowest Temperature for Today: Displays the maximum and minimum temperatures for the day
-  -The Temperature Throughout the Day: Displays the temperature based on the hour of the day, as well as a line graph to visualize the temperature change
-  -Precipitation Percentage: Shows the precipitation percentage throughout the day
-  -Weather Map: Shows a map of the cloud and temperature patterns of the city
+  - **Metric to Imperial Toggle Switch**: Switches units from metric to imperial (C to F, and kmph to mph)
+  - **Multi-day Weather Displa**y: Display weather data for the entire weak
+  - **Highest and Lowest Temperature for Today**: Displays the maximum and minimum temperatures for the day
+  - **The Temperature Throughout the Day**: Displays the temperature based on the hour of the day, as well as a line graph to visualize the temperature change
+  - **Precipitation Percentage**: Shows the precipitation percentage throughout the day
+  - **Weather Map**: Shows a map of the cloud and temperature patterns of the city
 
 *To test out the API, I utilized ThunderClient, but I could have easily used another program such as Postman or Insomnia instead*
 
