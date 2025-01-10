@@ -1,7 +1,7 @@
 # **Weather App**
 Quick weather app project I cooked up in around a day, that displays the current weather for today:
 
-Features:
+## Features:
 - Uses the OpenWeatherAPI to fetch weather data for cities all around the world
 - The background of the card changes depending on the weather displayed as well as the time of day for that location, taking into account whether
   or not it is night or day at the location by comparing the local time of the city to the timezone and sunset and sunrise times
