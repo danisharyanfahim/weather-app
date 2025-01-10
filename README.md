@@ -25,5 +25,5 @@ Quick weather app project I cooked up in around a day, that displays the current
   -Precipitation Percentage: Shows the precipitation percentage throughout the day
   -Weather Map: Shows a map of the cloud and temperature patterns of the city
 
-*To test out the API, I utilized ThunderClient, but I could have easily used another program such as Postman or Insomnia instead
+*To test out the API, I utilized ThunderClient, but I could have easily used another program such as Postman or Insomnia instead*
 
